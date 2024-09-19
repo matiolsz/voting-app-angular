@@ -1,11 +1,12 @@
 # Getting Started
-Frontend Part
 
-## Preview of project
+#### Preview of project (watch short video) :
 <p align="middle"> 
-<a href="https://youtu.be/MWh8JTY3cjM" target="_blank">
- <img src="https://ibb.co/qDS9KJX.md.png" alt="Watch the video" width="260" height="180" border="10" />
+<a href="https://youtu.be/B_Xu2Q419fU" target="_blank">
+  <a href="https://youtu.be/B_Xu2Q419fU"><img src="https://i.ibb.co/gr2wN4H/Zrzut-ekranu-2024-09-19-233301.png" alt="Zrzut-ekranu-2024-09-19-233301" width="260" height="180" border="0"></a>
 </a>
+  
+#### Frontend Part
   
 Application needs backend part ([link](https://github.com/matiolsz/VotingApp)) and frontend part (this repo) to work.
 
