@@ -1,0 +1,14 @@
+<div class="popup-backdrop" (click)="close()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+      <h2>Add New Voter</h2>
+      <input [(ngModel)]="voterName" placeholder="Voter Name">
+      <div class="button-group">
+        <button (click)="close()">Cancel</button>
+        <button (click)="addVoter()" [disabled]="!voterName">Add</button>
+      </div>
+      <div [hidden]="!voterAlreadyExists">
+        Voter already exists!<br>
+        Try another name.
+      </div>
+    </div>
+  </div>

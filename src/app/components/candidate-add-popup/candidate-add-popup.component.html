@@ -1,0 +1,10 @@
+<div class="popup-backdrop" (click)="close()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+      <h2>Add New Candidate</h2>
+      <input [(ngModel)]="candidateName" placeholder="Candidate Name">
+      <div class="button-group">
+        <button (click)="close()">Cancel</button>
+        <button (click)="addCandidate()" [disabled]="!candidateName">Add</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,47 @@
+.header {
+    padding-left: 1.5rem;
+    font-family: 'mulish-semibold';
+    font-size: 40;
+    border-bottom: 1px solid black;
+}
+
+.container{
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 7rem;
+}
+
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    justify-content: center;
+}
+
+.description-title {
+    font-family: 'mulish-extrabold';
+    font-size: 56px;
+    line-height: 95%;
+}
+
+.description {
+    padding-top: 1rem;
+    font-size: 13px;
+}
+
+.aling-to-bottom {
+    display: flex;
+    align-items: end;
+}

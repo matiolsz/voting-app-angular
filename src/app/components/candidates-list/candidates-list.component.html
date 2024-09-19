@@ -1,0 +1,27 @@
+<div class="title">CANDIDATES
+  <button class="add-button" (click)="openAddCandidatePopup()">+</button>
+</div>
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+          <th>Name</th>
+          <th>Collected votes</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let candidate of candidates">
+          <td>{{ candidate.name }}</td>
+          <td>{{candidate.collectedVotes}}</td>
+      </tr>
+    </tbody>
+      
+  </table>
+</div>
+
+<app-candidate-add-popup 
+  *ngIf="showPopup"
+  (addNewCandidate)="addCandidate($event)"
+  (closePopup)="closePopup()">
+</app-candidate-add-popup>

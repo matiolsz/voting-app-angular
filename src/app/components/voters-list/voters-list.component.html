@@ -1,0 +1,27 @@
+<div class="title">VOTERS
+    <button class="add-button" (click)="openAddVoterPopup()">+</button>
+</div>
+<div class="table-wrapper">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Voted</th>
+        </tr>
+        </thead>
+    
+        <tbody>
+        <tr *ngFor="let voter of voters">
+            <td>{{ voter.name }}</td>
+            <td>{{ voter.voted ? '+' : '-' }}</td>
+        </tr>
+        </tbody>
+        
+    </table>
+</div>
+       
+<app-voter-add-popup 
+  *ngIf="showPopup"
+  (addNewVoter)="addVoter($event)"
+  (closePopup)="closePopup()">
+</app-voter-add-popup>

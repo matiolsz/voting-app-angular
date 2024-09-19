@@ -1,0 +1,42 @@
+<div [hidden]="submitted">
+    <form class="form-row" #voteForm="ngForm">
+        <div class="field-wrapper">
+            <label class="field-description">Your candidate</label>
+            <select id="voterName" required [(ngModel)]="model.voterName" name="voterName">
+                <option *ngFor="let voter of getUnvotedVoters()" [value]="voter.name">
+                    {{voter.name}}
+                </option>
+            </select>
+        </div>
+        <div class="field-wrapper">
+            <label class="field-description">Your candidate</label>
+            <select id="candidateName" required [(ngModel)]="model.candidateName" name="candidateName">
+                <option *ngFor="let candidate of candidates" [value]="candidate.name">
+                    {{candidate.name}}
+                </option>
+            </select>
+        </div>
+
+        <div class="field-wrapper">
+            <label class="field-description">Take action</label>
+            <div>
+                <button type="button" (click)="onSubmit(); voteForm.reset()" [disabled]="!voteForm.form.valid" >VOTE</button>
+            </div>     
+        </div>
+    </form>
+
+</div>
+
+<div [hidden]="!submitted">
+    <div class="form-row">
+        <div class="form-column">
+            <div class="vote-again">
+                <div class="field-description">Thank you for voting. <br>Maybe you want to vote one more time?</div>
+            </div>
+        </div>
+        <div class="form-column">
+            <button class="vote-again-button" type="button" (click)="displayForm()">Vote again</button>
+        </div>
+    </div>
+</div>
+
