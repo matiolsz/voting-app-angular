@@ -10,7 +10,7 @@ import { CandidatesListComponent } from './components/candidates-list/candidates
 import { VotersListComponent } from './components/voters-list/voters-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CandidateAddPopupComponent } from './components/candidate-add-popup/candidate-add-popup.component';
-import { VoterAddPopupComponent } from './voter-add-popup/voter-add-popup.component';
+import { VoterAddPopupComponent } from './components/voter-add-popup/voter-add-popup.component';
 
 
 @NgModule({

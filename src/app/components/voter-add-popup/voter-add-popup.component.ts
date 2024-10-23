@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Voter } from '../entities/voter';
-import { VotingService } from '../services/voting.service';
+import { Voter } from '../../entities/voter';
+import { VotingService } from '../../services/voting.service';
 import { Subscription } from 'rxjs';
 
 @Component({
