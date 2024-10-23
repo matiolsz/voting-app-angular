@@ -1,7 +1,7 @@
 <div [hidden]="submitted">
     <form class="form-row" #voteForm="ngForm">
         <div class="field-wrapper">
-            <label class="field-description">Your candidate</label>
+            <label class="field-description">Who Are you?</label>
             <select id="voterName" required [(ngModel)]="model.voterName" name="voterName">
                 <option *ngFor="let voter of getUnvotedVoters()" [value]="voter.name">
                     {{voter.name}}
@@ -9,7 +9,7 @@
             </select>
         </div>
         <div class="field-wrapper">
-            <label class="field-description">Your candidate</label>
+            <label class="field-description">Your candidate:</label>
             <select id="candidateName" required [(ngModel)]="model.candidateName" name="candidateName">
                 <option *ngFor="let candidate of candidates" [value]="candidate.name">
                     {{candidate.name}}
